@@ -21,6 +21,6 @@ public class ServerClient01Application {
     String port;
     @RequestMapping("/hi")
     public String hi(@RequestParam String name){
-        return name+"好！"+"您的端口号为："+port;
+        return name+" 大哥好！"+"您的端口号为："+port;
     }
 }
