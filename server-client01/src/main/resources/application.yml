@@ -1,0 +1,10 @@
+eureka:
+  server:
+    remote-region-urls-with-name: http://localhost:8761/eureka/
+
+server:
+  port: 8762
+
+spring:
+  application:
+    name: server-client01

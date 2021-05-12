@@ -1,0 +1,11 @@
+server:
+  port: 8761 #eureka端口
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #禁止注册自身
+    fetchRegistry: false  #因为该服务没有注册到其他注册中心，所以关闭从注册中心拉取服务列表。
+    serviceUrl: #服务注册中心地址
+        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

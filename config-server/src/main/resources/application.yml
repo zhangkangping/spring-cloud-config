@@ -1,0 +1,20 @@
+eureka:
+  client:
+    remote-region-urls-with-name: http://localhost:8761/eureka/
+
+server:
+  port: 8766
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangkangping/spring-cloud-config
+          search-paths: /spring-cloud-config
+          username: 773402716@qq.com
+          password: 3664292704zhang
+
+
